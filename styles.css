@@ -1,0 +1,115 @@
+@font-face {
+    font-family: Inter;
+    src: url("assets/fonts/Inter-VariableFont_slnt,wght.ttf");
+}
+
+:root {
+    --green-color: hsl(75, 94%, 57%);
+    --white-color: hsl(0, 0%, 100%);
+    --grey-color-700: hsl(0, 0%, 20%);
+    --grey-color-800: hsl(0, 0%, 12%);
+    --grey-color-900: hsl(0, 0%, 8%);
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+}
+
+p {
+    font-size: 0.875rem;
+}
+
+p,
+h1,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--grey-color-900);
+    box-sizing: border-box;
+}
+
+.card {
+    margin: auto;
+    background-color: var(--grey-color-800);
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.avatar {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+
+.name {
+    color: var(--white-color);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.location {
+    color: var(--green-color);
+    font-size: 0.875rem;
+    display: block;
+    margin-top: 10px;
+}
+
+.bio {
+    color: var(--white-color);
+    font-size: 0.875rem;
+    padding: 0 10px;
+    padding-top: 20px;
+}
+
+.links {
+    color: var(--white-color);
+    list-style-type: none;
+}
+
+.link {
+    font-size: 0.875rem;
+    display: block;
+    padding: 14px 0;
+    background-color: var(--grey-color-700);
+    margin-top: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.link:hover {
+    background-color: var(--green-color);
+    color: var(--grey-color-900);
+    transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
+}
+
+.attribution {
+    background-color: var(--grey-color-900);
+    color: var(--white-color);
+    text-align: center;
+    padding: 40px 0;
+}
+
+.attribution a {
+    width: 100%;
+    color: var(--green-color);
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 375px) {
+    .bio {
+        padding: 0 20px;
+        padding-top: 20px;
+    }
+}
