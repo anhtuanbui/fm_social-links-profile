@@ -42,7 +42,7 @@ ul {
 .card {
     margin: auto;
     background-color: var(--grey-color-800);
-    padding: 40px;
+    padding: 20px;
     border-radius: 20px;
 }
 
@@ -56,7 +56,7 @@ ul {
     color: var(--white-color);
     font-size: 1.5rem;
     font-weight: 700;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .location {
@@ -69,21 +69,22 @@ ul {
 .bio {
     color: var(--white-color);
     font-size: 0.875rem;
-    padding: 0 10px;
-    padding-top: 20px;
+    margin-top: 30px;
 }
 
 .links {
     color: var(--white-color);
     list-style-type: none;
+    margin-top: 25px;
 }
 
 .link {
+    width: 275px;
     font-size: 0.875rem;
     display: block;
     padding: 14px 0;
     background-color: var(--grey-color-700);
-    margin-top: 1rem;
+    margin-top: 16px;
     border-radius: 10px;
     text-decoration: none;
     color: var(--white-color);
@@ -109,8 +110,10 @@ ul {
 }
 
 @media only screen and (min-width: 375px) {
-    .bio {
-        padding: 0 20px;
-        padding-top: 20px;
+    .card {
+        padding: 40px;
+    }
+    .link {
+        width: 300px;
     }
 }
